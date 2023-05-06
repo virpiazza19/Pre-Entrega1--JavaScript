@@ -6,14 +6,14 @@ let totalSum = 0;
 let gradeItem = 1;
 
 while (gradeItem <= 3) {
-    let gradeNumber = parseFloat(prompt("Indique la nota final de la evaluación"));
+    let gradeNumber = parseFloat(prompt("Indique la nota final de la evaluación (en caso de referir nota con decimales utilizar el punto en vez de la coma, ejemplo 7.5)"));
 
     if (gradeNumber >= 1 && gradeNumber <= 10) {
         totalSum += gradeNumber;
         console.log("Nota " + gradeItem + ": " + gradeNumber);
         gradeItem++;
     } else {
-        alert("El valor de la nota debe estar entre 1 y 10");
+        alert("El valor de la nota debe estar entre 1 y 10, por favor utiliza el punto (.) para declarar decimales. Ejemplo, 7.5");
     }
 }
 
